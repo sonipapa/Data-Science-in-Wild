@@ -3,7 +3,9 @@
 This assignment involves 5 steps:
 
 	**Step 1-3**: setting up Apache-Spark
+	
 	**Step 4**: count each word in document `wiki.txt`
+	
 	**Step 5**: count each digram in document `wiki.txt` and compute conditional digram probability for each digram in document `wiki.txt`.
 
 ## Step 4 and 5
