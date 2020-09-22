@@ -2,11 +2,11 @@
 
 This assignment involves 5 steps:
 
-	**Step 1-3**: setting up Apache-Spark
+> **Step 1-3**: setting up Apache-Spark
 	
-	**Step 4**: count each word in document `wiki.txt`
+> **Step 4**: count each word in document `wiki.txt`
 	
-	**Step 5**: count each digram in document `wiki.txt` and compute conditional digram probability for each digram in document `wiki.txt`.
+> **Step 5**: count each digram in document `wiki.txt` and compute conditional digram probability for each digram in document `wiki.txt`.
 
 ## Step 4 and 5
 
@@ -44,36 +44,40 @@ This is what I submitted to the Terminal, and the line after `$` is what to type
 
 **Bigram count**
 
-The output for bigram count is a list of the bigrams and their corresponding count in `wiki.txt`.
+> The output for bigram count is a list of the bigrams and their corresponding count in `wiki.txt`.
 
-For each line, it's of the form:
+> For each line, it's of the form:
 
+```
 ((first word of the bigram, second word of the bigram), count of the bigram)
-{: .alert .alert-info .text-center}
+```
 
-Here is an example:
+> Here is an example:
 
+```
 (('organization', 'of'), 208)
-{: .alert .alert-info .text-center}
+```
 
-The bigram is `'organization of'`, with the first word being `'organization'` and the second word being `'of'`, and that bigram exists in this document for `208` times.
+> The bigram is `'organization of'`, with the first word being `'organization'` and the second word being `'of'`, and that bigram exists in this document for `208` times.
 
 **Conditional bigram distribution**
 
-The output for conditional bigram frequency is a list of the bigrams and their corresponding conditional frequency distributions in `wiki.txt`.
+> The output for conditional bigram frequency is a list of the bigrams and their corresponding conditional frequency distributions in `wiki.txt`.
 
-For each line, it's of the form:
+> For each line, it's of the form:
 
+```
 ((first word of the bigram, second word of the bigram), conditional bigram distribution)
-{: .alert .alert-info .text-center}
+```
 
-The conditional bigram distribution is the count of the bigram divided by the count of the first word in this bigram.
+> The conditional bigram distribution is the count of the bigram divided by the count of the first word in this bigram.
 
-Here is an example:
+> Here is an example:
 
+```
 (('three', 'one'), 0.08789033503241452)
-{: .alert .alert-info .text-center}
+```
 
-The bigram is `'three one'`, with the first word being `'three'` and the second word being `'one'`, and that if a word `'three'` occurs then there is a 8.78903% chance that the next word is `'one'`.
+> The bigram is `'three one'`, with the first word being `'three'` and the second word being `'one'`, and that if a word `'three'` occurs then there is a 8.78903% chance that the next word is `'one'`.
 
 
